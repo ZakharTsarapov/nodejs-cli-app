@@ -21,7 +21,7 @@ async function invokeAtction({ action, id, name, email, phone }) {
       console.log(deleteContact);
 
     default:
-      // console.warn("\x1B[31m Unknown action type!");
+      console.warn("\x1B[31m Unknown action type!");
   }
 }
 
