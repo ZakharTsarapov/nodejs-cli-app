@@ -14,11 +14,11 @@ async function invokeAtction({ action, id, name, email, phone }) {
 
     case "add":
       const newContact = await contacts.addContact(name, email, phone);
-      console.log(newContact);
+       return console.log(newContact);
 
     case "remove":
       const deleteContact = await contacts.removeContact(id);
-      console.log(deleteContact);
+       return console.log(deleteContact);
 
     default:
       console.warn("\x1B[31m Unknown action type!");
